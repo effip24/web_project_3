@@ -1,0 +1,23 @@
+.place__paragraphs {
+  display: flex;
+  width: 100%;
+  max-width: 456px;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-area: paragraph;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .place__paragraphs {
+    max-width: 352px;
+  }
+} 
+@media screen and (max-width: 320px) {
+  .place__paragraphs {
+    width: calc(100% - 32px);
+    max-width: 288px;
+    margin: 32px auto 0 auto;
+  }
+} 
